@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container1 {
+            /* width: 50%; */
+            height: 1000vh;
+            border: 2px solid black;
+            margin: auto;
+            padding: 2px;
+        }
+
+        .header {
+            /* border: 2px solid red; */
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .logo {
+            display: block;
+            /* height: 100px; */
+            width: 50px;
+            margin: auto;
+        }
+
+        .navbar {
+            background-color: black;
+            border-radius: 30px;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: red
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 160px;
+        }
+
+        .box {
+            display: inline-block;
+            /* border: 2px solid red;
+            width: 150px;
+            height: 150px; */
+            margin: 2px;
+        }
+
+        #box1 {
+            position: sticky;
+            top: 95%;
+            float: right;
+        }
+
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            
+        }
+
+        .item {
+            /* width: 50%; */
+            height: 96%;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1 {
+            width: 40%;
+            font-size:1.75em;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        #item-2 h4 {
+            font-size: 2em;
+            text-align: center;
+        }
+        #item-2 {
+            flex-grow: 2;
+            font-size: 1.5em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <img src="preview.png" alt="Logo" class="logo">
+        <header class="header">
+            To Do App
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Calender</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+        <div class="box" id="box1">
+            <input type="text" name="search2" id="box3" placeholder="Chat with us">
+        </div>
+        <div class="container">
+            <div class="item" id="item-1">
+                <form action="" method="get">
+                    
+                    <div class="button">
+                        <label for="name"> Task Name: </label>
+                        <input type="text" name="myName" id="name">
+                    </div>
+                    <div class="button">
+                        <label for="myText">Task Description: </label>
+                         <br><textarea name="myText" cols="60" rows="10"></textarea>
+                    </div>
+                    <div class="button">
+                        Date: 
+                        <input type="date" name="myDate">
+                    </div>
+                    <div class="button">
+                        Time for reminder: 
+                        <input type="time" name="myTime">
+                    </div>
+                    <div>
+                        <label for="myEmail">Email ID of task partner </label>
+                        <input type="email" name="myEmail">
+                    </div>
+                </form>
+            </div>
+            <div class="item" id="item-2">
+                <h4>
+                    <b>Tasks for today</b> 
+                </h4>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>    
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi dolorem optio nesciunt deleniti illo inventore laborum odit. Quos error cupiditate totam ad excepturi sit dicta reprehenderit nihil, alias officiis numquam, molestiae voluptatem sequi laboriosam facilis? Facere magnam sunt vero consequatur quos? Soluta et quo minus, necessitatibus debitis, deleniti quas tempora impedit quia praesentium laudantium aliquid.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
